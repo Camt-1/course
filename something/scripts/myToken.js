@@ -17,7 +17,7 @@ async function main() {
     console.log("Transaction sent. Waiting for deployment...");
     await mytoken.waitForDeployment();
 
-    console.log("myToken contract deployed at:", await myToken.getAddress());
+    console.log("myToken contract deployed at:", await mytoken.getAddress());
 }
 
 main().catch((error) => {
